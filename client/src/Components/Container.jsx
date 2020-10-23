@@ -3,7 +3,7 @@ import List from "./Todo/List"
 
 const Container = () => {
     return (
-        <div>
+        <div className="container">
             <List />
         </div>
     )

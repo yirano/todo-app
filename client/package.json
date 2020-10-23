@@ -23,7 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "ebuild": "npm run build && ./node_modules/.bin/build",
-    "scss": "node-sass --watch ./src/stylesheets/sass/index.scss -o ./src/stylesheets/css/index.css"
+    "scss": "node-sass --watch ./src/stylesheets/sass/index.scss -o ./src/stylesheets/css"
   },
   "eslintConfig": {
     "extends": "react-app"
