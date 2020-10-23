@@ -3,7 +3,8 @@ import Card from "./Card"
 
 const List = (props) => {
     return (
-        <div>
+        <div className="list">
+            <h5>Today</h5>
             {props.tasks.map((task) => {
                 return <Card task={task} />
             })}

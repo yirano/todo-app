@@ -13,6 +13,7 @@ function createWindow() {
 	const startURL = isDev ? "http://localhost:3000" : `file://${path.join(__dirname, "../public/index.html")}`
 
 	mainWindow.loadURL(startURL)
+	mainWindow.setMinimumSize(800, 600)
 
 	mainWindow.once("ready-to-show", () => mainWindow.show())
 	mainWindow.on("closed", () => {
