@@ -1,1 +1,5 @@
-
+.container {
+	@include display-flex-column;
+	@include flex-center-column;
+	width: 100%;
+}

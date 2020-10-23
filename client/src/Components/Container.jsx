@@ -1,10 +1,10 @@
 import React from 'react'
 import List from "./Todo/List"
 
-const Container = () => {
+const Container = (props) => {
     return (
         <div className="container">
-            <List />
+            <List tasks={props.tasks} />
         </div>
     )
 }

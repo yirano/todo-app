@@ -1,9 +1,12 @@
 import React from 'react'
 
-const Card = () => {
+const Card = (props) => {
+    console.log(props)
+    const { task } = props
     return (
-        <div>
-            <h1>Card</h1>
+        <div className="card">
+            <p>{task.task}</p>
+            <p>{task.date}</p>
         </div>
     )
 }

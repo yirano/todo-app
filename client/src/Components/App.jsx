@@ -1,12 +1,13 @@
 import React from "react"
 import Container from "./Container"
 import Dashboard from "./Dashboard"
+import tasks from '../Assets/tasks.json'
 
 function App() {
 	return (
 		<div className="app">
 			<Dashboard />
-			<Container />
+			<Container tasks={tasks} />
 		</div>
 	)
 }

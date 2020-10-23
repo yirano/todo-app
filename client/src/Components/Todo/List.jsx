@@ -1,10 +1,12 @@
 import React from 'react'
 import Card from "./Card"
 
-const List = () => {
+const List = (props) => {
     return (
         <div>
-            <Card />
+            {props.tasks.map((task) => {
+                return <Card task={task} />
+            })}
         </div>
     )
 }
