@@ -210,8 +210,7 @@ h5 {
     .card .toggleComplete.show,
     .card .toggleDelete.show {
       border: 1px solid #e0dfdf;
-      opacity: 1;
-      color: #e0dfdf !important; }
+      opacity: 1; }
       .card .toggleComplete.show div,
       .card .toggleDelete.show div {
         opacity: 1; }
@@ -222,3 +221,5 @@ h5 {
       .card .toggleComplete.hide div,
       .card .toggleDelete.hide div {
         opacity: 0; }
+  .card .toggleDelete.hide {
+    border: 1px solid transparent; }

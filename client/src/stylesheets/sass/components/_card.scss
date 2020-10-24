@@ -19,7 +19,6 @@
 		&.show {
 			border: 1px solid $gray;
 			opacity: 1;
-			color: $gray !important;
 			div {
 				opacity: 1;
 			}
@@ -30,6 +29,11 @@
 			div {
 				opacity: 0;
 			}
+		}
+	}
+	.toggleDelete {
+		&.hide {
+			border: 1px solid transparent;
 		}
 	}
 }
