@@ -238,3 +238,17 @@ h5 {
     .addTask input[type=text]:focus {
       outline: none;
       border: 1px solid #2e4052; }
+    .addTask input[type=text]::placeholder {
+      color: #e0dfdf; }
+  .addTask button {
+    background: #fff;
+    border: 1px solid #e0dfdf;
+    width: 10%;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: #e0dfdf;
+    margin-left: 1rem; }
+  .addTask input[type=text]:focus + button {
+    border: 1px solid #2e4052;
+    background: #2e4052;
+    color: #fff; }

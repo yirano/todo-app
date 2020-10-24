@@ -12,5 +12,22 @@
 			outline: none;
 			border: 1px solid $charcoal;
 		}
+		&::placeholder {
+			color: $gray;
+		}
+	}
+	button {
+		background: $white;
+		border: 1px solid $gray;
+		width: 10%;
+		border-radius: 50%;
+		font-size: 1.2rem;
+		color: $gray;
+		margin-left: 1rem;
+	}
+	input[type=text]:focus + button {
+		border: 1px solid $charcoal;
+		background: $charcoal;
+		color: $white;
 	}
 }
