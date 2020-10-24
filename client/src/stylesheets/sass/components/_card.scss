@@ -1,3 +1,35 @@
 .card {
 	@include border;
+	@include display-flex-row;
+	@include flex-center-column;
+	.task {
+		flex-grow: 1;
+		margin: 0 1rem;
+		&.show {
+			color: $gray;
+			text-decoration: line-through;
+		}
+	}
+	.toggleComplete,
+	.toggleDelete {
+		font-size: 1.4rem;
+		color: $gray;
+		border-radius: 50%;
+		border: 1px solid transparent;
+		&.show {
+			border: 1px solid $gray;
+			opacity: 1;
+			color: $gray !important;
+			div {
+				opacity: 1;
+			}
+		}
+		&.hide {
+			opacity: 1;
+			border: 1px solid $charcoal;
+			div {
+				opacity: 0;
+			}
+		}
+	}
 }

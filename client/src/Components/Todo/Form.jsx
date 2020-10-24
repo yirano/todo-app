@@ -3,7 +3,10 @@ import React from 'react'
 const Form = () => {
     return (
         <div>
-            <h1>Form</h1>
+            <form>
+                <input type="text" name="todo" />
+                <input type="submit" value="Submit" />
+            </form>
         </div>
     )
 }
