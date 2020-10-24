@@ -3,6 +3,8 @@
 	padding: 0.8rem;
 	filter: drop-shadow(2px -1px 8px #e0dfdf);
 	background: $white;
+	position: absolute;
+	bottom: 0;
 	.addTask {
 		display: flex;
 		width: 100%;

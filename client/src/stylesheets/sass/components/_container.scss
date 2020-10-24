@@ -1,6 +1,7 @@
 .container {
 	@include display-flex-column;
 	@include flex-center-column;
+	position: relative;
 	margin: auto;
 	width: 45vw;
 	background: #fff;
