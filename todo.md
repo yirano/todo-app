@@ -26,6 +26,8 @@
     - [ ] Drag and Drop between `Today`, `Week`, `Someday`
 
 #### MVP : Server
+- [ ] - `POST` - User can register
+- [ ] - `POST` - User can log in
 - [ ] `GET` - User can view all tasks
   - [ ] `GET` - User can view tasks by: 
     - [ ] `Today`
