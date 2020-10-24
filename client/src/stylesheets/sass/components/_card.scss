@@ -16,6 +16,7 @@
 		color: $gray;
 		border-radius: 50%;
 		border: 1px solid transparent;
+		background: $white;
 		&.show {
 			border: 1px solid $gray;
 			opacity: 1;
