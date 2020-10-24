@@ -212,32 +212,35 @@ h5 {
   .card .task {
     flex-grow: 1;
     margin: 0 1rem; }
-    .card .task.show {
+    .card .task.complete {
       color: #e0dfdf;
       text-decoration: line-through; }
   .card .toggleComplete,
   .card .toggleDelete {
-    font-size: 1.4rem;
-    color: #e0dfdf;
+    width: 1.6rem;
+    height: 1.6rem;
+    color: #fff;
     border-radius: 50%;
     border: 1px solid transparent;
-    background: #fff; }
-    .card .toggleComplete.show,
-    .card .toggleDelete.show {
+    background-color: #fff; }
+    .card .toggleComplete.complete,
+    .card .toggleDelete.complete {
       border: 1px solid #e0dfdf;
-      opacity: 1; }
-      .card .toggleComplete.show div,
-      .card .toggleDelete.show div {
+      background: #e0dfdf; }
+      .card .toggleComplete.complete div,
+      .card .toggleDelete.complete div {
         opacity: 1; }
-    .card .toggleComplete.hide,
-    .card .toggleDelete.hide {
+    .card .toggleComplete.incomplete,
+    .card .toggleDelete.incomplete {
       opacity: 1;
-      border: 1px solid #2e4052; }
-      .card .toggleComplete.hide div,
-      .card .toggleDelete.hide div {
+      border: 1px solid #2e4052;
+      color: #fff; }
+      .card .toggleComplete.incomplete div,
+      .card .toggleDelete.incomplete div {
         opacity: 0; }
-  .card .toggleDelete.hide {
-    border: 1px solid transparent; }
+  .card .toggleDelete.incomplete {
+    border: 1px solid transparent;
+    color: #fff; }
 
 .addTaskContainer {
   width: 100%;

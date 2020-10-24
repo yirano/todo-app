@@ -1,24 +1,22 @@
 import React, { useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckCircle, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
+import CloseIcon from '@material-ui/icons/Close'
+import CheckRoundedIcon from '@material-ui/icons/CheckRounded'
 
 const Card = (props) => {
     const { task } = props
     const [complete, setComplete] = useState(false)
     return (
         <div className="card">
-            <div className={complete ? 'toggleComplete show' : 'toggleComplete hide'} onClick={() => setComplete(!complete)}>
-                <div>
-                    <FontAwesomeIcon icon={faCheckCircle} />
-                </div>
+            <div className={complete ? 'toggleComplete complete' : 'toggleComplete incomplete'} onClick={() => setComplete(!complete)}>
+                <CheckRoundedIcon />
             </div>
-            <div className={complete ? 'task show' : 'task hide'}>
+            <div className={complete ? 'task complete' : 'task incomplete'}>
                 <p>{task.task}</p>
                 {/* <p>{task.date}</p> */}
             </div>
-            <div className={complete ? 'toggleDelete show' : 'toggleDelete hide'}>
+            <div className={complete ? 'toggleDelete complete' : 'toggleDelete incomplete'}>
                 <div>
-                    <FontAwesomeIcon icon={faTimesCircle} />
+                    <CloseIcon />
                 </div>
             </div>
         </div>

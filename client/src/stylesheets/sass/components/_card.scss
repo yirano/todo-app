@@ -5,36 +5,40 @@
 	.task {
 		flex-grow: 1;
 		margin: 0 1rem;
-		&.show {
+		&.complete {
 			color: $gray;
 			text-decoration: line-through;
 		}
 	}
 	.toggleComplete,
 	.toggleDelete {
-		font-size: 1.4rem;
-		color: $gray;
+		// font-size: 1.6rem;
+		width: 1.6rem;
+		height: 1.6rem;
+		color: $white;
 		border-radius: 50%;
 		border: 1px solid transparent;
-		background: $white;
-		&.show {
+		background-color: $white;
+		&.complete {
 			border: 1px solid $gray;
-			opacity: 1;
+			background: $gray;
 			div {
 				opacity: 1;
 			}
 		}
-		&.hide {
+		&.incomplete {
 			opacity: 1;
 			border: 1px solid $charcoal;
+			color: $white;
 			div {
 				opacity: 0;
 			}
 		}
 	}
 	.toggleDelete {
-		&.hide {
+		&.incomplete {
 			border: 1px solid transparent;
+			color: $white;
 		}
 	}
 }
