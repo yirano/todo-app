@@ -208,7 +208,8 @@ h5 {
     font-size: 1.4rem;
     color: #e0dfdf;
     border-radius: 50%;
-    border: 1px solid transparent; }
+    border: 1px solid transparent;
+    background: #fff; }
     .card .toggleComplete.show,
     .card .toggleDelete.show {
       border: 1px solid #e0dfdf;
