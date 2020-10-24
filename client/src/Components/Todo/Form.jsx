@@ -2,12 +2,10 @@ import React from 'react'
 
 const Form = () => {
     return (
-        <div>
-            <form>
-                <input type="text" name="todo" />
-                <input type="submit" value="Submit" />
-            </form>
-        </div>
+        <form className="addTask">
+            <input type="text" name="todo" placeholder="Add a Task" />
+            <input type="submit" value="Submit" />
+        </form>
     )
 }
 

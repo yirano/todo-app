@@ -1,0 +1,16 @@
+.addTask {
+	display: flex;
+	width: 100%;
+	padding: 0.6rem 0;
+	input[type=text] {
+		border: 1px solid $gray;
+		height: 3rem;
+		border-radius: 20px;
+		flex-grow: 1;
+		padding: 0 1rem;
+		&:focus {
+			outline: none;
+			border: 1px solid $charcoal;
+		}
+	}
+}

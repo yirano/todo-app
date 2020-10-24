@@ -159,32 +159,33 @@ h5 {
   font-weight: 600; }
 
 .app {
-  display: flex; }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 .dashboard {
   background: #fff;
   color: #2e4052;
   padding: 4rem;
-  width: 32vw;
+  width: 25vw;
   height: 100vh; }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") no-repeat;
-  background-size: cover;
-  background-position: center;
+  margin: auto;
   padding: 4rem;
-  width: 100%; }
+  width: 45vw;
+  background: #fff;
+  padding: 2rem 2rem 0 2rem;
+  border-radius: 13px;
+  height: 85vh; }
 
 .list {
-  width: 45vw;
-  min-width: 250px;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 13px;
-  height: 85vh;
   overflow-y: scroll; }
 
 .card {
@@ -223,3 +224,17 @@ h5 {
         opacity: 0; }
   .card .toggleDelete.hide {
     border: 1px solid transparent; }
+
+.addTask {
+  display: flex;
+  width: 100%;
+  padding: 0.6rem 0; }
+  .addTask input[type=text] {
+    border: 1px solid #e0dfdf;
+    height: 3rem;
+    border-radius: 20px;
+    flex-grow: 1;
+    padding: 0 1rem; }
+    .addTask input[type=text]:focus {
+      outline: none;
+      border: 1px solid #2e4052; }
