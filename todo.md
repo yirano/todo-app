@@ -1,6 +1,6 @@
 ### Dashboard
 
-#### MVP
+#### MVP : Client
 - [ ] Dashboard
   - [ ] Shortcuts - `Component` _or_ `Dropdown`?
       - [ ] Today - `Link: Day`
@@ -24,3 +24,18 @@
     - [ ] User can delete tasks
     - [ ] User can add tasks
     - [ ] Drag and Drop between `Today`, `Week`, `Someday`
+
+#### MVP : Server
+- [ ] `GET` - User can view all tasks
+  - [ ] `GET` - User can view tasks by: 
+    - [ ] `Today`
+    - [ ] `Week` - Current day of week plus six days out
+    - [ ] `Upcoming` - Unscheduled
+
+- [ ] `POST` - User can post new task
+  - [ ] User has option to add due date
+
+- [ ] `PUT` - User can edit task
+  - [ ] Toggling complete is a PUT request
+
+- [ ] `DELETE` - User can delete task
