@@ -4,4 +4,16 @@
 	padding: 4rem;
 	width: 25vw;
 	height: 100vh;
+	.accordion {
+		box-shadow: none;
+		.dashboardLinks {
+			@include display-flex-column;
+			font-size: 1.2rem;
+			.dashboardLink {
+				text-decoration: none;
+				color: inherit;
+				margin-bottom: 2rem;
+			}
+		}
+	}
 }

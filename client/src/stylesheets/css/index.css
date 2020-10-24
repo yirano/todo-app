@@ -172,6 +172,16 @@ h5 {
   padding: 4rem;
   width: 25vw;
   height: 100vh; }
+  .dashboard .accordion {
+    box-shadow: none; }
+    .dashboard .accordion .dashboardLinks {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.2rem; }
+      .dashboard .accordion .dashboardLinks .dashboardLink {
+        text-decoration: none;
+        color: inherit;
+        margin-bottom: 2rem; }
 
 .container {
   display: flex;
