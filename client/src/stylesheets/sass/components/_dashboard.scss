@@ -5,6 +5,7 @@
 	width: 25vw;
 	height: 100vh;
 	.accordion {
+		position: relative;
 		box-shadow: none;
 		.dashboardLinks {
 			@include display-flex-column;

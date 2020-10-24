@@ -16,8 +16,8 @@ const Dashboard = () => {
             <Accordion className="accordion">
                 <AccordionSummary
                     expandIcon={<ExpandMore />}
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
+                // aria-controls="panel1a-content"
+                // id="panel1a-header"
                 >
                     <h5>Shortcuts</h5>
                 </AccordionSummary>

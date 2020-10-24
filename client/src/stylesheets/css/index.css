@@ -173,6 +173,7 @@ h5 {
   width: 25vw;
   height: 100vh; }
   .dashboard .accordion {
+    position: relative;
     box-shadow: none; }
     .dashboard .accordion .dashboardLinks {
       display: flex;
