@@ -178,12 +178,13 @@ h5 {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  padding: 4rem;
   width: 45vw;
   background: #fff;
-  padding: 2rem 2rem 0 2rem;
   border-radius: 13px;
-  height: 85vh; }
+  height: 85vh;
+  overflow-x: hidden; }
+  .container > div:first-child {
+    padding: 2rem 2rem 0 2rem; }
 
 .list {
   overflow-y: scroll; }
@@ -225,30 +226,34 @@ h5 {
   .card .toggleDelete.hide {
     border: 1px solid transparent; }
 
-.addTask {
-  display: flex;
+.addTaskContainer {
   width: 100%;
-  padding: 0.6rem 0; }
-  .addTask input[type=text] {
-    border: 1px solid #e0dfdf;
-    height: 3rem;
-    border-radius: 20px;
-    flex-grow: 1;
-    padding: 0 1rem; }
-    .addTask input[type=text]:focus {
-      outline: none;
-      border: 1px solid #2e4052; }
-    .addTask input[type=text]::placeholder {
-      color: #e0dfdf; }
-  .addTask button {
-    background: #fff;
-    border: 1px solid #e0dfdf;
-    width: 10%;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    color: #e0dfdf;
-    margin-left: 1rem; }
-  .addTask input[type=text]:focus + button {
-    border: 1px solid #2e4052;
-    background: #2e4052;
-    color: #fff; }
+  padding: 0.8rem;
+  filter: drop-shadow(2px -1px 8px #e0dfdf);
+  background: #fff; }
+  .addTaskContainer .addTask {
+    display: flex;
+    width: 100%; }
+    .addTaskContainer .addTask input[type=text] {
+      border: 1px solid #e0dfdf;
+      height: 3rem;
+      border-radius: 20px;
+      flex-grow: 1;
+      padding: 0 1rem; }
+      .addTaskContainer .addTask input[type=text]:focus {
+        outline: none;
+        border: 1px solid #2e4052; }
+      .addTaskContainer .addTask input[type=text]::placeholder {
+        color: #e0dfdf; }
+    .addTaskContainer .addTask button {
+      background: #fff;
+      border: 1px solid #e0dfdf;
+      width: 3rem;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      color: #e0dfdf;
+      margin-left: 1rem; }
+    .addTaskContainer .addTask input[type=text]:focus + button {
+      border: 1px solid #2e4052;
+      background: #2e4052;
+      color: #fff; }

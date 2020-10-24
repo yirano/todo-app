@@ -2,10 +2,12 @@
 	@include display-flex-column;
 	@include flex-center-column;
 	margin: auto;
-	padding: 4rem;
 	width: 45vw;
 	background: #fff;
-	padding: 2rem 2rem 0 2rem;
 	border-radius: 13px;
 	height: 85vh;
+	overflow-x: hidden;
+	& > div:first-child {
+		padding: 2rem 2rem 0 2rem;
+	}
 }

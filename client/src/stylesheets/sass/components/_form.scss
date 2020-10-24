@@ -1,33 +1,38 @@
-.addTask {
-	display: flex;
+.addTaskContainer {
 	width: 100%;
-	padding: 0.6rem 0;
-	input[type=text] {
-		border: 1px solid $gray;
-		height: 3rem;
-		border-radius: 20px;
-		flex-grow: 1;
-		padding: 0 1rem;
-		&:focus {
-			outline: none;
-			border: 1px solid $charcoal;
+	padding: 0.8rem;
+	filter: drop-shadow(2px -1px 8px #e0dfdf);
+	background: $white;
+	.addTask {
+		display: flex;
+		width: 100%;
+		input[type=text] {
+			border: 1px solid $gray;
+			height: 3rem;
+			border-radius: 20px;
+			flex-grow: 1;
+			padding: 0 1rem;
+			&:focus {
+				outline: none;
+				border: 1px solid $charcoal;
+			}
+			&::placeholder {
+				color: $gray;
+			}
 		}
-		&::placeholder {
+		button {
+			background: $white;
+			border: 1px solid $gray;
+			width: 3rem;
+			border-radius: 50%;
+			font-size: 1.2rem;
 			color: $gray;
+			margin-left: 1rem;
 		}
-	}
-	button {
-		background: $white;
-		border: 1px solid $gray;
-		width: 10%;
-		border-radius: 50%;
-		font-size: 1.2rem;
-		color: $gray;
-		margin-left: 1rem;
-	}
-	input[type=text]:focus + button {
-		border: 1px solid $charcoal;
-		background: $charcoal;
-		color: $white;
+		input[type=text]:focus + button {
+			border: 1px solid $charcoal;
+			background: $charcoal;
+			color: $white;
+		}
 	}
 }
