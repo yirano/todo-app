@@ -14,7 +14,7 @@ const Card = (props) => {
             </div>
             <div className={complete ? 'task show' : 'task hide'}>
                 <p>{task.task}</p>
-                <p>{task.date}</p>
+                {/* <p>{task.date}</p> */}
             </div>
             <div className={complete ? 'toggleDelete show' : 'toggleDelete hide'}>
                 <div>
