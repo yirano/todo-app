@@ -2,7 +2,7 @@
 
 #### MVP : Client
 - [ ] Dashboard
-  - [ ] Shortcuts - `Component` _or_ `Dropdown`?
+  - [ ] Shortcuts - `Dropdown`
       - [ ] Today - `Link: Day`
           - Renders tasks for the day
       - [ ] Next 7 Days - `Link: Week`
@@ -32,7 +32,7 @@
   - [ ] `GET` - User can view tasks by: 
     - [ ] `Today`
     - [ ] `Week` - Current day of week plus six days out
-    - [ ] `Upcoming` - Unscheduled
+    - [ ] `Someday` - Unscheduled
 
 - [ ] `POST` - User can post new task
   - [ ] User has option to add due date
